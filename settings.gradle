@@ -1,0 +1,4 @@
+include ':mvvm'
+include ':mvp'
+include ':app'
+rootProject.name = "CPVM"
