@@ -6,12 +6,11 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.ObservableField;
-import androidx.lifecycle.ViewModel;
 
 import com.example.mvvm.data.LogInfo;
 import com.example.mvvm.data.local.LogInfoLocalModel;
 
-public class LogViewModel extends ViewModel {
+public class LogViewModel  {
     public final ObservableField<String> title = new ObservableField<>();
     public final ObservableField<String> content = new ObservableField<>();
     @NonNull
