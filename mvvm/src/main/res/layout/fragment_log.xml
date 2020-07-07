@@ -43,7 +43,7 @@
             android:ems="10"
             android:hint="请输入标题"
             android:inputType="textPersonName"
-            android:text="@{viewmodel.title}"
+            android:text="@={viewmodel.title}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
