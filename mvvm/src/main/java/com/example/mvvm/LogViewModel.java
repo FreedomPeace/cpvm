@@ -10,6 +10,8 @@ import androidx.databinding.ObservableField;
 import com.example.mvvm.data.LogInfo;
 import com.example.mvvm.data.local.LogInfoLocalModel;
 
+import java.util.Random;
+
 public class LogViewModel  {
     public final ObservableField<String> title = new ObservableField<>();
     public final ObservableField<String> content = new ObservableField<>();
@@ -31,5 +33,9 @@ public class LogViewModel  {
         LogInfo logInfo = new LogInfo(title.get(),content.get());
         model.saveLogInfo(logInfo);
         model.getLogInfo();
+    }
+
+    public void randomTitle() {
+        title.set("title"+ new Random().nextInt(10));
     }
 }
